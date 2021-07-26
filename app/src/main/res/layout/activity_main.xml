@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/downloadimage"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iTunes search Api"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="78dp"
+        android:id="@+id/headingApi"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/headingApi"
+        android:id="@+id/text"
+        android:textSize="20dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textColorHint="@color/design_default_color_on_primary"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:hint="Enter the name of the song"
+></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/text"
+        android:text="Search"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/searchButton"
+></Button>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/searchButton"
+></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
